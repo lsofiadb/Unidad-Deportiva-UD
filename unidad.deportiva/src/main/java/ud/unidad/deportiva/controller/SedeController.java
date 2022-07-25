@@ -1,9 +1,7 @@
 package ud.unidad.deportiva.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import ud.unidad.deportiva.model.Sede;
 import ud.unidad.deportiva.service.SedeService;
 
@@ -19,5 +17,10 @@ public class SedeController {
     @GetMapping("/getSedes")
     public List<Sede> getSedes(){
         return sedeService.getSedes();
+    }
+
+    @PostMapping("/save")
+    public Sede save(@RequestBody Sede sede){
+        return sedeService.save(sede);
     }
 }
