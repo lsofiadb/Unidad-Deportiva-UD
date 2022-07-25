@@ -21,7 +21,7 @@ public class CargoeEmpleadoService {
         return  cargoEmpleadoRepository.findAll();
     }
 
-    public CargoEmpleado findById(Long idSede){
-        return cargoEmpleadoRepository.findById(idSede).get();
+    public CargoEmpleado findById(Long idCargoEmpleado){
+        return cargoEmpleadoRepository.findById(idCargoEmpleado).get();
     }
 }
