@@ -1,0 +1,32 @@
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  top: 10%;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  margin: 20%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #a0a4a7;
+  box-shadow: 0 0 5px gray;
+}
+
+@media (min-width: 400px) {
+  .card {
+    width: 310px;
+    margin: 10px;
+  }
+}
+
+.card img {
+}
+
+.bold{
+  font-weight:bold;
+}
